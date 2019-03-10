@@ -1,0 +1,198 @@
+//! css frameworks
+// @import "../node_modules/bulma/bulma"; // css framework https://bulma.io/ - uncomment if you'd like to use it
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../fonts/scss/fontawesome.scss";
+@import "../fonts/scss/v4-shims.scss";
+
+$enable-gradients: true;
+$enable-responsive-font-sizes: true;
+$enable-shadows: true;
+
+$primary:       #fd146d;
+$secondary:     #facc00;
+$success:       #a2e02e;
+$info:          #e5ff00;
+$warning:       #f5b402;
+$danger:        #fd6914;
+$light:         #f8f545;
+$dark:          #400372;
+
+$link-color: $dark;
+$link-hover-color: darken($link-color, 15%);
+$body-bg: #000000;
+
+h3, p.lead {
+  font-family: 'Syncopate', sans-serif;
+  background:linear-gradient(to right, rgb(248, 244, 246) 0%, rgb(133, 133, 133) 100%) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3:hover, p.lead:hover {
+  background: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-body:hover {
+background-image: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%);
+}
+
+
+/* .navbar:hover {
+  background-image: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%);
+} */
+
+/* html {
+  background: #fff;
+}
+
+body {
+  height: 100%;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nocturno Display Medium 4", Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+body {
+    background: url(http://unsplash.it/1499/1000);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blend {
+  mix-blend-mode: exclusion;
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6vw;
+}
+
+@mixin orange-to-pink($deg: to right, $col-1: $orange, $col-2: $pink) {
+  background-image: linear-gradient($deg, $col-1, $col-2);
+}
+
+@mixin gradient-text() {
+  background: linear-gradient(to right, $orange, $pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@keyframes gradient { 
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+@mixin button-reset {
+  padding: 10;
+  border: none;
+  font: inherit;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #CB3066, #16BFFD);
+  color: #fff;
+  background-size: 300% 300%;
+  cursor: pointer;
+}
+
+@mixin button-hover {
+  background: linear-gradient(to right, rgb(253, 187, 6), rgb(253, 22, 149));
+  animation: gradient 2.5s ease infinite;
+  color: rgb(0, 0, 0);
+  background-size: 300% 300%;
+  cursor: pointer;
+}
+
+@mixin button-active {
+  background: linear-gradient(to right, rgb(253, 187, 6), rgb(253, 22, 149));
+  color: rgb(0, 0, 0);
+  background-size: 300% 300%;
+  cursor: pointer;
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+@mixin button-size {
+  border-radius: 1rem;
+}
+
+.btn {
+ @include button-reset;
+  @include button-size;
+}
+
+.btn:hover, .btn:focus {
+ @include button-hover;
+  @include button-size;
+}
+
+.btn:active {
+ @include button-active;
+  @include button-size;
+}
+
+/* @mixin img-fluid {
+  // Part 1: Set a maximum relative to the parent
+  max-width: 100%;
+  // Part 2: Override the height to auto, otherwise images will be stretched
+  // when setting a width and height attribute on the img element.
+  height: auto;
+} */
+
+/* .image {
+  @include img-fluid;
+} */
+
+.social{
+    text-align:center;
+    width:60px;
+    height:60px;
+    float:left;
+    background:rgb(255,255,255);
+    border:0px solid rgb(204,204,204);
+    box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius:100px;
+    margin:0 10px 10px 0;
+    padding:15px;
+}
+
+.dragon{
+    text-align:center;
+    width:120px;
+    height:120px;
+    float:left;
+    background:rgb(0, 0, 0);
+    border:0px solid rgb(204,204,204);
+    box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius:100px;
+    margin:0 10px 10px 0;
+    padding:19px;
+}
+
+.google-pluse:hover{background:#DD4B39;color:#FFF;}
+.facebook:hover{background:#3b5998;color:#FFF;}
+.twitter:hover{background:#00acee;color:#FFF;}
+.pinterest:hover{background:#c8232c;color:#FFF;}
+.linkedin:hover{background:#0e76a8;color:#FFF;}
+.skype:hover{background:#00aff0;color:#FFF;}
+.youtube:hover{background:#c4302b;color:#FFF;}
+.tumblr:hover{background:#34526f;color:#FFF;}
+.dragon:hover{color: rgb(0, 0, 0); background-image: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%);}
+
+

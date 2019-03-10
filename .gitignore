@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/.vscode
+/haters
+.DS_Store
+/fonts
+README.md
+LICENSE
