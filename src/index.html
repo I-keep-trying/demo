@@ -4,24 +4,15 @@
   <meta charset="UTF-8">
   <title>Design Playground</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="A simple yet thorough webpack starter boilerplate for static websites that acheive high performance and cover all best practices.">
+  <meta name="Description" content="demo website">
 
   <!-- Open Graph data / Facebook Card data -->
-  <meta property="og:title" content="tris webpack boilerplate">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://github.com/tr1s/tris-webpack-boilerplate">
-  <meta property="og:image" content="https://i.imgur.com/lxRBpeb.jpg">
-  <meta property="og:image:alt" content="A blue package, symbolizing what webpack does.">
-  <meta property="og:description" content="A simple yet thorough webpack starter boilerplate for static websites that acheive high performance and cover all best practices.">
 
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@triscodes">
 
   <!-- Mobile header color for Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#2c638f">
+  <meta name="theme-color" content="#3F007A">
   <!-- Mobile header color Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#2c638f">
+  <meta name="msapplication-navbutton-color" content="#3F007A">
   <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -32,138 +23,266 @@
 
 <body>
 
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark mb-1">
-        <a class="navbar-brand" href="#">
-          <div class="row">
-            <div class="social dragon">
-              <i class="fas fa-dragon fa-3x"></i>
-            </div>
-          Crego Design
-        </a>
-    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-4">
     
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
-                Products
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Product 1</a>
-                <a class="dropdown-item" href="#">Product 2</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Another Product</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">
-                Contact
-              </a>
+        <li class="nav-item">
+          <a class="nav-link" data-value="about" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="blog" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="team" href="#">
+            Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact" data-value="contact" href="#">Contact</a>
+        </li>
+      </ul>
     
-            </li>
-          </ul>
-        </div>
-      </nav>
-    
-      <div class="jumbotron">
-        <h1 class="display-4" >Simple. Elegant. Awesome.</h1>
-        <h6 class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. </h6>
-    
-        <h6 class="lead">
-          <a class="btn" href="#">Learn more</a>
-        </h6>
-      </div>
-      <div class="row no-gutters mt-sm-4 mt-md-1 mt-lg-2 mt-xl-2">
-        <div class="col-sm">
-          <div class="card ">
-            <div class="card-body text-center">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title</p>
-    
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title</p>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title</p>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-sm-4 mt-md-1 mt-lg-2 mt-xl-2">
-        <div class="col-sm-12 col-md-6 text-sm-center text-md-left ">
-          <h3>An important heading</h3>
-          <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
-    
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.</p>
-          <p class="lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-            <div class="col-sm-12 col-md-6 text-sm-center image">
-      <img src="https://picsum.photos/400/400/?image=678" class="img-fluid" alt="Responsive image">
-      </div>
-      </div>
     </div>
-    <footer id="footer">
+    </nav>
+<header class="header">
+<div class="overlay"></div>
+<div class="container">
+<div class="description ">
+  <h1> Hello ,Welcome To My official Website
+    <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+      officia deserunt mollit anim id est laborum.
+    </p>
+    <button class="btn btn-outline-secondary btn-lg">See more</button> </h1>
+</div>
+</div>
+</header>
+<div class="about" id="about">
+  <div class="container">
+    <h1 class="text-center">About Me</h1>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-12">
+  <img src="https://picsum.photos/400/400?image=882" class="img-fluid">
+  <span class="text-justify">S.Web Developer</span>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12 desc">
+
+  <h3>D.John</h3>
+  <p>
+    ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="portfolio" id="portfolio">
+  <h1 class="text-center">Portfolio</h1>
+  <div class="container">
     <div class="row">
-    <div class="social google-pluse">
-      <i class="fa fa-google-plus fa-2x"></i>
-    </div>
-    <div class="social facebook">
-      <i class="fa fa-facebook fa-2x"></i>
-    </div>
-    <div class="social twitter">
-      <i class="fa fa-twitter fa-2x"></i>
-    </div>
-    <div class="social pinterest">
-      <i class="fa fa-pinterest fa-2x"></i>
-    </div>
-      <div class="social linkedin">
-        <i class="fa fa-linkedin fa-2x"></i>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=883" class="img-fluid">
       </div>
-      <div class="social skype">
-        <i class="fa fa-skype fa-2x"></i>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=884" class="img-fluid">
       </div>
-      <div class="social youtube">
-        <i class="fa fa-youtube fa-2x"></i>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=885" class="img-fluid">
       </div>
-      <div class="social tumblr">
-        <i class="fa fa-tumblr fa-2x"></i>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=886" class="img-fluid">
       </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=887" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=888" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=870" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=871" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="https://picsum.photos/400/400?image=872" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Posts section -->
+<div class="blog" id="blog">
+  <div class="container">
+    <h1 class="text-center">Blog</h1>
+    <div class="row">
+      <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="card">
+          <div class="card-img">
+            <img src="https://picsum.photos/400/400?image=873" class="img-fluid">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">Post Title</h4>
+            <p class="card-text">
+
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="card">
+          <div class="card-img">
+            <img src="https://picsum.photos/400/400?image=874" class="img-fluid">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">Post Title</h4>
+            <p class="card-text">
+
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="card">
+          <div class="card-img">
+            <img src="https://picsum.photos/400/400?image=875" class="img-fluid">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">Post Title</h4>
+            <p class="card-text">
+
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="" class="card-link">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team section -->
+<div class="team">
+  <div class="container">
+    <h1 class="text-center">Our Team</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+        <img src="https://picsum.photos/400/400?image=860" class="img-fluid" alt="team">
+        <div class="des">
+          Sara
+        </div>
+        <span class="text-muted">Manager</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+        <img src="https://picsum.photos/400/400?image=861" class="img-fluid" alt="team">
+        <div class="des">
+          Chris
+        </div>
+        <span class="text-muted">S.enginner</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+        <img src="https://picsum.photos/400/400?image=862" class="img-fluid" alt="team">
+        <div class="des">
+          Layla
+        </div>
+        <span class="text-muted">Front End Developer</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+        <img src="https://picsum.photos/400/400?image=863" class="img-fluid" alt="team">
+        <div class="des">
+          J.Jirard
+        </div>
+        <span class="text-muted">Team Manger</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact form -->
+<div class="contact-form">
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h1>Get in Touch</h1>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 right">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control-lg">
+
+         </textarea>
+          </div>
+          <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--     <footer id="footer">
+      <div class="row">
+        <div class="social google-pluse">
+          <i class="fa fa-google-plus fa-2x"></i>
+        </div>
+        <div class="social facebook">
+          <i class="fa fa-facebook fa-2x"></i>
+        </div>
+        <div class="social twitter">
+          <i class="fa fa-twitter fa-2x"></i>
+        </div>
+        <div class="social pinterest">
+          <i class="fa fa-pinterest fa-2x"></i>
+        </div>
+        <div class="social linkedin">
+          <i class="fa fa-linkedin fa-2x"></i>
+        </div>
+        <div class="social skype">
+          <i class="fa fa-skype fa-2x"></i>
+        </div>
+        <div class="social youtube">
+          <i class="fa fa-youtube fa-2x"></i>
+        </div>
+        <div class="social tumblr">
+          <i class="fa fa-tumblr fa-2x"></i>
+        </div>
       </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+ --><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
-</html>
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/src/index.js"></script>
+  </body>
+  </html>
