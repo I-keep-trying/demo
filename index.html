@@ -27,27 +27,28 @@
   <nav class="navbar navbar-expand-lg fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon">
+        <i class="fas fa-bars fa-lg"></i>
+      </span>
     </button>
 
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav mr-4">
 
         <li class="nav-item">
-          <a class="nav-link" data-value="about" href="#">About</a>
+          <a class="nav-link" data-value="about" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
+          <a class="nav-link" data-value="portfolio" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-value="blog" href="#">Blog</a>
+          <a class="nav-link" data-value="blog" href="#blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-value="team" href="#">
-            Team</a>
+          <a class="nav-link" data-value="team" href="#team">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact" data-value="contact" href="#">Contact</a>
+          <a class="nav-link" data-value="contact" href="#contact">Contact</a>
         </li>
       </ul>
 
@@ -57,26 +58,25 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="description ">
-        <h1> Hello ,Welcome To My official Website
-          <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        <h1 class="colors1"> Hello ,Welcome To My official Website</h1>
+          <p class="colors1"> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.
           </p>
-          <button class="btn btn-outline-secondary btn-lg">See more</button> </h1>
+          <h2><button class="btn btn-outline-secondary btn-lg">See more</button> </h2>
       </div>
     </div>
   </header>
   <div class="about" id="about">
     <div class="container">
-      <h1 class="text-center">About Me</h1>
+      <h1 class="text-center colors1">About Me</h1>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
           <img src="https://picsum.photos/400/400?image=882" class="img-fluid">
-          <span class="text-justify">S.Web Developer</span>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 desc">
 
-          <h3>D.John</h3>
-          <p>
+          <h3 class="colors2">A. Crego</h3>
+          <p class="colors2">
             ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -90,8 +90,8 @@
   </div>
 
   <div class="portfolio" id="portfolio">
-    <h1 class="text-center">Portfolio</h1>
-    <div class="container">
+        <div class="container">
+    <h1 class="text-center colors1">Portfolio</h1>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
           <img src="https://picsum.photos/400/400?image=883" class="img-fluid">
@@ -129,7 +129,7 @@
   <!-- Posts section -->
   <div class="blog" id="blog">
     <div class="container">
-      <h1 class="text-center">Blog</h1>
+      <h1 class="text-center colors1">Blog</h1>
       <div class="row">
         <div class="col-md-4 col-lg-4 col-sm-12">
           <div class="card">
@@ -189,9 +189,9 @@
     </div>
   </div>
   <!-- Team section -->
-  <div class="team">
+  <div id="team" class="team">
     <div class="container">
-      <h1 class="text-center">Our Team</h1>
+      <h1 class="text-center colors1">Our Team</h1>
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12 item">
           <img src="https://picsum.photos/400/400?image=860" class="img-fluid" alt="team">
@@ -225,12 +225,12 @@
     </div>
   </div>
   <!-- Contact form -->
-  <div class="contact-form">
+  <div id="contact" class="contact-form">
     <div class="container">
       <form>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <h1>Get in Touch</h1>
+            <h1 class="text-center colors1">Get in Touch</h1>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 right">
             <div class="form-group">
@@ -279,9 +279,8 @@
       </div>
     </footer>
  -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>

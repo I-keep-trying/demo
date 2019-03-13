@@ -26,33 +26,40 @@ html,h1,h2,h3,h4,h5,h6,a{
  font-family: "Raleway";
 }
 
-/* h3, p.lead {
-  font-family: 'Syncopate', sans-serif;
-  background:linear-gradient(to right, rgb(248, 244, 246) 0%, rgb(133, 133, 133) 100%) no-repeat;
+.colors1:hover {
+  background: linear-gradient(to right, #f79009, #ce096c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.colors2:hover {
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
 h3:hover, p.lead:hover {
   background: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
 
-.navbar{ background:#F97300;}
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.navbar{ background:rgba(249, 116, 0, 0);}
+.nav-link , .navbar-brand{ color: #f97300; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.nav-link:hover{ background: #f4f4f421; color: #f97300; }
 .navbar-collapse{ justify-content: flex-end;}
-.navbar-toggler{  background:#fff !important;}
+.navbar-toggler{  background:rgba(255, 255, 255, 0) !important;}
 
 .navbar-collapse{
  justify-content: flex-end;
 }
 
-.card-body:hover {
-background-image: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%);
+.fas.fa-bars {
+  color: #f97300;
 }
+
 
     /*header style*/
 .header{
@@ -233,6 +240,8 @@ background-image: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,
   color: rgb(0, 0, 0);
   background-size: 300% 300%;
   cursor: pointer;
+  transform: translateY(1px);
+  filter: saturate(150%);
 }
 
 @mixin button-active {
@@ -262,6 +271,7 @@ background-image: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,
  @include button-active;
   @include button-size;
 }
+
 
 .social{
     text-align:center;
