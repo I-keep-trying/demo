@@ -38,13 +38,6 @@ html,h1,h2,h3,h4,h5,h6,a{
   -webkit-text-fill-color: transparent;
 }
 
-/*
-h3:hover, p.lead:hover {
-  background: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%) no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
 .navbar{ background:rgba(249, 116, 0, 0);}
 .nav-link , .navbar-brand{ color: #f97300; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
@@ -59,8 +52,6 @@ h3:hover, p.lead:hover {
 .fas.fa-bars {
   color: #f97300;
 }
-
-
     /*header style*/
 .header{
     background-image: url('https://picsum.photos/1499/1006');
@@ -93,6 +84,95 @@ h3:hover, p.lead:hover {
  width: 50%;
  line-height: 1.5;
 }
+
+    /*image effects*/
+
+/* Common style */
+figure {
+	position: relative;
+/*   height: 15rem;
+  width: 100%;
+  margin: 1em; */
+	//margin: 10px 1%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.round {
+  background: #3085a3;
+    border-radius: 50%;
+}
+
+.port {
+  background: #000000;
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+
+}
+
+figure.round img {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;	
+  opacity: 0.8;
+}
+
+figure.port img {
+    position: relative;
+top: -16px; 
+left: -15px;
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+  opacity: 0.8;
+}
+
+/* figure img {
+	position: relative;
+	display: block;
+ height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+ */
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% );
+	width: calc(100%);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0, 0);
+	transform: translate3d(-10px,0,0);
+}
+
+figure.effect-port img {
+	max-width: none;
+	width: -webkit-calc(100% );
+	width: calc(100%);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-1px,0, 0);
+	transform: translate3d(-1px,0,0);
+}
+
+figure.effect-lily:hover img {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-port:hover img {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+    /*image effects*/
 
 .about{
  margin: 4em 0;
@@ -183,7 +263,7 @@ h3:hover, p.lead:hover {
  transition:.3s ease-in-out;
 }
 
-.team .item:hover .des{
+.item:hover .des{
  height: 100%;
  background:#f973007d;
  position: absolute;
@@ -194,13 +274,18 @@ h3:hover, p.lead:hover {
 }
 
 .contact-form{
- margin: 6em 0;
+ margin: 2em 0;
  position: relative;  
 }
 .contact-form h1{
- padding:2em 1px;
- color: #F97300; 
+ padding: 0em 0em;
+ color: #F97300;
 }
+
+.contact-form p {
+  top: 0;
+}
+
 .contact-form .right{
  max-width: 600px;
 }
@@ -214,6 +299,15 @@ h3:hover, p.lead:hover {
  font-size: 16px;
 }
 
+.colors3 {
+line-height: 2;
+}
+
+.colors3:hover {
+    background: linear-gradient(to right, #f79009, #ce096c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @keyframes gradient { 
