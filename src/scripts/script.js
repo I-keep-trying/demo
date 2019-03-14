@@ -1,4 +1,13 @@
-console.log('%c Hello from /scripts/script.js ', 'background: lemonchiffon; border: 1px solid #fff');
-console.log('%c Welcome to tris-webpack-boilerplate! ', 'background: lavenderblush; border: 1px solid #fff');
-
+/* eslint-disable prettier/prettier */
 // add custom js below
+$(document).ready(function () {
+    $('.header').height($(window).height());
+
+    $(".navbar a").click(function () {
+        $("body,html").animate({
+            scrollTop: $("#" + $(this).data('value')).offset().top
+        }, 1000)
+
+    })
+
+})
