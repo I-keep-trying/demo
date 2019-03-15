@@ -38,7 +38,7 @@ html,h1,h2,h3,h4,h5,h6,a{
   -webkit-text-fill-color: transparent;
 }
 
-.navbar{ background:rgba(249, 116, 0, 0);}
+.navbar{ background:rgba(249, 0, 216, 0.377);}
 .nav-link , .navbar-brand{ color: #f97300; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
 .nav-link:hover{ background: #f4f4f421; color: #f97300; }
@@ -99,7 +99,7 @@ figure {
 }
 
 .round {
-  background: #3085a3;
+  background: #10828C;
     border-radius: 50%;
 }
 
@@ -117,7 +117,7 @@ figure.round img {
   height: 100%;
   width: 100%;
   border-radius: 50%;	
-  opacity: 0.8;
+  //opacity: 0.2;
 }
 
 figure.port img {
@@ -130,23 +130,15 @@ left: -15px;
   opacity: 0.8;
 }
 
-/* figure img {
-	position: relative;
-	display: block;
- height: 100%;
-    width: 100%;
-    opacity: 0.8;
-}
- */
 figure.effect-lily img {
 	max-width: none;
 	width: -webkit-calc(100% );
 	width: calc(100%);
-	opacity: 0.7;
+	opacity: 0.8;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0, 0);
-	transform: translate3d(-10px,0,0);
+	-webkit-transform: translate3d(-4px,0, 0);
+	transform: translate3d(-4px,0,0);
 }
 
 figure.effect-port img {
@@ -275,7 +267,7 @@ figure.effect-port:hover img {
 
 .contact-form{
  margin: 2em 0;
- position: relative;  
+ position: relative;
 }
 .contact-form h1{
  padding: 0em 0em;
@@ -283,6 +275,7 @@ figure.effect-port:hover img {
 }
 
 .contact-form p {
+  padding: 0em 4em 0em 0em;
   top: 0;
 }
 
@@ -308,6 +301,37 @@ line-height: 2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* social icons */
+
+p.social a {
+  display: inline-block; 
+  margin: 0 10px 10px 0; 
+  color: #fff;  
+  width: 3em; 
+  height: 3em; 
+  border-radius: 1.5em; 
+  line-height: 3em; 
+  font-size: 1.2em; 
+  vertical-align: bottom; 
+  text-align: center; 
+  border: solid 1px #ccc; 
+  color: #ccc; 
+  transition: all 0.2s ease-out;
+}
+p.social a:hover , p.social a:focus {
+  color: rgb(23, 223, 250); 
+  border-color: darkblue; 
+  text-decoration: none;
+}
+p.social a i {
+  vertical-align: middle;
+}
+p.social a i:before {
+  line-height: 3em;
+}
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @keyframes gradient { 
@@ -366,7 +390,7 @@ line-height: 2;
   @include button-size;
 }
 
-
+/* 
 .social{
     text-align:center;
     width:60px;
@@ -379,7 +403,7 @@ line-height: 2;
     margin:0 10px 10px 0;
     padding:15px;
 }
-
+ */
 .dragon{
     text-align:center;
     width:120px;

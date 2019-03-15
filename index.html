@@ -17,6 +17,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -249,58 +250,75 @@
           <div class="col-lg-4 col-md-4 col-sm-12">
             <h1 class="colors1">Get in Touch</h1>
             <span class="about">
-              <p class="text-muted colors3">This form doesn't work yet.</p>
+              <p class="text-muted colors3">This form doesn't work yet. At the rate I'm going, it may never work.</p>
             </span>
           </div>
 
 
           <div class="col-lg-8 col-md-8 col-sm-12 right">
+            <form id="contact-form" method="post" action="contact.php" role="form">
+              <div class="messages"></div>
+              <div class="controls">
             <div class="form-group">
-              <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+              <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="" required="required">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"
+                required="required" data-error="Valid email is required.">
+              <div class="help-block with-errors"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control form-control-lg">
-
+              <textarea id="form_message" name="message" class="form-control" class="form-control form-control-lg" placeholder="So, what do you think?" data-error="What, certainly you weren't going to send a blank message, were you?" required="required">
          </textarea>
+        <div class="help-block with-errors">
+          
+        </div>
             </div>
-            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+            <input type="submit" class="btn btn-secondary btn-block" value="Send message" name="">
+            </div>
+          </form>
           </div>
         </div>
       </form>
     </div>
   </div>
-  <!--     <footer id="footer">
+    <div class="container">
       <div class="row">
-        <div class="social google-pluse">
-          <i class="fa fa-google-plus fa-2x"></i>
-        </div>
-        <div class="social facebook">
-          <i class="fa fa-facebook fa-2x"></i>
-        </div>
-        <div class="social twitter">
-          <i class="fa fa-twitter fa-2x"></i>
-        </div>
-        <div class="social pinterest">
-          <i class="fa fa-pinterest fa-2x"></i>
-        </div>
-        <div class="social linkedin">
-          <i class="fa fa-linkedin fa-2x"></i>
-        </div>
-        <div class="social skype">
-          <i class="fa fa-skype fa-2x"></i>
-        </div>
-        <div class="social youtube">
-          <i class="fa fa-youtube fa-2x"></i>
-        </div>
-        <div class="social tumblr">
-          <i class="fa fa-tumblr fa-2x"></i>
-        </div>
-      </div>
-    </footer>
- -->
+              <div class="col-lg-2">
+  </div>
+
+        <div class="col-lg-8 ">
+
+<p class="social">
+  <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons" class="facebook">
+    <i class="socicon-facebook"></i><span class="sr-only">Share on Facebook</span>
+  </a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons" class="gplus">
+    <i class="socicon-googleplus"></i><span class="sr-only">Share on G+</span>
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=Share%20Icons%20Tutorial%20by%20Bootstrapious.com&amp;url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons&amp;via=bootstrapious"
+    class="twitter">
+    <i class="socicon-twitter"></i><span class="sr-only">Share on Twitter</span>
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons&amp;summary=Check%20out%20this%20nice%20tutorial&amp;source=https%3A%2F%2Fbootstrapious.com%2F"
+    class="linkedin">
+    <i class="socicon-linkedin"></i><span class="sr-only">Share on LinkedIn</span>
+  </a>
+  <a href="https://buffer.com/add?url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons&amp;text=Share%20Icons%20Tutorial%20by%20Bootstrapious.com"
+    class="buffer">
+    <i class="socicon-buffer"></i><span class="sr-only">Save to Buffer</span>
+  </a>
+  <a href="https://getpocket.com/edit?url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons" class="pocket">
+    <i class="socicon-pocket"></i><span class="sr-only">Save to pocket</span>
+  </a>
+</p>
+</div>
+<div class="col-lg-2">
+</div>
+
+</div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -309,6 +327,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+      integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   <script src="/src/index.js"></script>
 </body>
 
