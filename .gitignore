@@ -1,5 +1,12 @@
 /node_modules
-/dist
+/dist/fonts
+/dist/icons*
+/dist/images
+/dist/404*
+/dist/index*
+/dist/sw.js
+/dist/webpack-bundle.css.*
+/dist/webpack-bundle.js*
 /.vscode
 /haters
 .DS_Store
@@ -7,3 +14,5 @@
 README.md
 LICENSE
 /src/index.html.txt
+/src/styles
+/src/images
