@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Crego Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
   <meta name="Description" content="demo website">
 
   <!-- Mobile header color for Chrome, Firefox OS and Opera -->
@@ -17,9 +17,8 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
-    <!-- This might work for publishing on github pages, maybe??? Uncomment to use. -->
-    <!-- <link rel="stylesheet" href="https://github.com/I-keep-trying/demo/tree/master/dist/webpack-bundle.css"> -->
+  <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,8 +32,7 @@
     </button>
 
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav mr-4">
-
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
           <a class="nav-link" data-value="about" href="#about">About</a>
         </li>
@@ -51,32 +49,29 @@
           <a class="nav-link" data-value="contact" href="#contact">Contact</a>
         </li>
       </ul>
-
     </div>
   </nav>
-  <header class="header">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="description ">
+  <header class="container header overlay">
+    <div class="row welcome">
+      <div class="col mh-100">
         <h1 class="colors1">Hello, Welcome To My official Website</h1>
-        <p class="colors1">This is my website. That fancy button there doesn't do anything, lol. It just looks cool. 
+        <p class="colors1">This is my website. That fancy button there doesn't do anything, lol. It just looks cool.
         </p>
         <h2><button class="btn btn-outline-secondary btn-lg">See more</button> </h2>
       </div>
     </div>
   </header>
   <div class="about" id="about">
-    <div class="container">
-      <h1 class="text-center colors1">About Me</h1>
+    <h1 class="text-center colors1">About Me</h1>
+    <div class="container about" id="about">
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="col-3">
           <figure>
             <img src="https://picsum.photos/400/400?image=882">
             <img src="https://picsum.photos/400/400?image=883" class="effect-lily">
           </figure>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-12 desc">
-
+        <div class="col desc">
           <h3 class="colors2">A. Crego</h3>
           <p class="colors2">
             Wouldn't you love to know... ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -90,75 +85,76 @@
       </div>
     </div>
   </div>
-
   <div class="portfolio" id="portfolio">
     <div class="container">
       <h1 class="text-center colors1">Portfolio</h1>
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="col">
           <figure class="portfolio-e">
             <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=883" class="img-fluid">
+              <img src="https://picsum.photos/400/400?image=883" class="img-fluid">
             </a>
           </figure>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <figure  class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=884" class="img-fluid">
-            </a>
-          </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="col">
           <figure class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=885" class="img-fluid">
+            <a target="_blank" href="https://picsum.photos/400/400?image=883">
+              <img src="https://picsum.photos/400/400?image=884" class="img-fluid">
             </a>
           </figure>
         </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="col">
           <figure class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=886" class="img-fluid">
+            <a target="_blank" href="https://picsum.photos/400/400?image=883">
+              <img src="https://picsum.photos/400/400?image=885" class="img-fluid">
             </a>
           </figure>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <figure class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=887" class="img-fluid">
-            </a>
-          </figure>
+        <div class="row">
+          <div class="col">
+            <figure class="portfolio-e">
+              <a target="_blank" href="https://picsum.photos/400/400?image=883">
+                <img src="https://picsum.photos/400/400?image=886" class="img-fluid">
+              </a>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="portfolio-e">
+              <a target="_blank" href="https://picsum.photos/400/400?image=883">
+                <img src="https://picsum.photos/400/400?image=887" class="img-fluid">
+              </a>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="portfolio-e">
+              <a target="_blank" href="https://picsum.photos/400/400?image=883">
+                <img src="https://picsum.photos/400/400?image=888" class="img-fluid">
+              </a>
+            </figure>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <figure class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=888" class="img-fluid">
-            </a>
-          </figure>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <figure class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=870" class="img-fluid">
-            </a>
-          </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <figure class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=871" class="img-fluid">
-            </a>
-          </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <figure class="portfolio-e">
-                        <a target="_blank" href="https://picsum.photos/400/400?image=883">
-            <img src="https://picsum.photos/400/400?image=872" class="img-fluid">
-            </a>
-          </figure>
+        <div class="row">
+          <div class="col">
+            <figure class="portfolio-e">
+              <a target="_blank" href="https://picsum.photos/400/400?image=883">
+                <img src="https://picsum.photos/400/400?image=870" class="img-fluid">
+              </a>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="portfolio-e">
+              <a target="_blank" href="https://picsum.photos/400/400?image=883">
+                <img src="https://picsum.photos/400/400?image=871" class="img-fluid">
+              </a>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="portfolio-e">
+              <a target="_blank" href="https://picsum.photos/400/400?image=883">
+                <img src="https://picsum.photos/400/400?image=872" class="img-fluid">
+              </a>
+            </figure>
+          </div>
         </div>
       </div>
     </div>
@@ -167,177 +163,204 @@
   <!-- Posts section -->
   <div class="blog" id="blog">
     <div class="container">
-      <h1 class="text-center colors1">Blog</h1>
-      <div class="row">
-        <div class="col-md-4 col-lg-4 col-sm-12">
-          <div class="card">
-            <div class="card-img">
-              <img src="https://picsum.photos/400/400?image=873" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Post Title</h4>
-              <p class="card-text">
-
-                There is actually nothing here.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="https://picsum.photos/400/400?image=873" class="card-link">Read more</a>
-            </div>
-          </div>
+      <div class="blog-card">
+        <div class="meta">
+          <div class="photo"
+            style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">John Doe</a></li>
+            <li class="date">Aug. 24, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-4 col-lg-4 col-sm-12">
-          <div class="card">
-            <div class="card-img">
-              <img src="https://picsum.photos/400/400?image=874" class="img-fluid">
-            </div>
-
-            <div class="card-body">
-              <h4 class="card-title">Post Title</h4>
-              <p class="card-text">
-
-               I am not a blogger. 
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="https://picsum.photos/400/400?image=874" class="card-link">Read more</a>
-            </div>
-          </div>
+        <div class="description">
+          <h1>Learning to Code</h1>
+          <h2>Opening a door to the future</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta
+            praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
         </div>
-        <div class="col-md-4 col-lg-4 col-sm-12">
-          <div class="card">
-            <div class="card-img">
-              <img src="https://picsum.photos/400/400?image=875" class="img-fluid">
-            </div>
-
-            <div class="card-body">
-              <h4 class="card-title">Post Title</h4>
-              <p class="card-text">
-
-                These photos are from picsum.com.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="https://picsum.photos/400/400?image=875" class="card-link">Read more</a>
-            </div>
-          </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo"
+            style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Jane Doe</a></li>
+            <li class="date">July. 15, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Mastering the Language</h1>
+          <h2>Java is not the same as JavaScript</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta
+            praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <!-- Team section -->
-  <div id="team" class="team">
-    <div class="container">
-      <h1 class="text-center colors1">Our Team</h1>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 item">
-          <img src="https://picsum.photos/400/400?image=860" class="img-fluid" alt="team">
-          <div class="des">
-            Sara
-          </div>
-          <span class="text-muted">I don't know why</span>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 item">
-          <img src="https://picsum.photos/400/400?image=861" class="img-fluid" alt="team">
-          <div class="des">
-            Chris
-          </div>
-          <span class="text-muted">These orange hovers</span>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 item">
-          <img src="https://picsum.photos/400/400?image=862" class="img-fluid" alt="team">
-          <div class="des">
-            Layla
-          </div>
-          <span class="text-muted">Are so JAZZY!!!</span>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 item">
-          <img src="https://picsum.photos/400/400?image=863" class="img-fluid" alt="team">
-          <div class="des">
-            J.Jirard
-          </div>
-          <span class="text-muted">They need to calm down.</span>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <!-- Contact form -->
   <div id="contact" class="contact-form">
+    <h1 class="text-center colors1">Get in Touch</h1>
     <div class="container">
       <form>
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h1 class="colors1">Get in Touch</h1>
-            <span class="about">
+          <div class="col">
+
+            <span>
               <p class="text-muted colors3">This form doesn't work yet. At the rate I'm going, it may never work.</p>
             </span>
-          </div>
 
 
-          <div class="col-lg-8 col-md-8 col-sm-12 right">
             <form id="contact-form" method="post" action="contact.php" role="form">
               <div class="messages"></div>
               <div class="controls">
-            <div class="form-group">
-              <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="" required="required">
-            </div>
-            <div class="form-group">
-              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"
-                required="required" data-error="Valid email is required.">
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <textarea id="form_message" name="message" class="form-control" class="form-control form-control-lg" placeholder="So, what do you think?" data-error="What, certainly you weren't going to send a blank message, were you?" required="required">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Your Name" name=""
+                    required="required">
+                </div>
+                <div class="form-group">
+                  <input id="form_email" type="email" name="email" class="form-control"
+                    placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <textarea id="form_message" name="message" class="form-control" class="form-control form-control-lg"
+                    placeholder="So, what do you think?"
+                    data-error="What, certainly you weren't going to send a blank message, were you?"
+                    required="required">
          </textarea>
-        <div class="help-block with-errors">
-          
-        </div>
-            </div>
-            <input type="submit" class="btn btn-secondary btn-block" value="Send message" name="">
-            </div>
-          </form>
+                  <div class="help-block with-errors">
+
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-secondary btn-block" value="Send message" name="">
+              </div>
+            </form>
           </div>
         </div>
       </form>
     </div>
   </div>
-    <div class="container">
-      <div class="row">
-              <div class="col-lg-2">
+
+  <!-- Social media buttons https://codepen.io/ruandre/pen/howFi -->
+  <div class="container social">
+    <div class="row ">
+      <div class="col">
+        <ul class="soc">
+          <li><a class="codepen" href="#" title="CodePen">
+              <div class="ir">
+                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                  <path
+                    d="M427 201.9c-0.6-4.2-2.9-8-6.4-10.3L264.2 87.3c-4.9-3.3-11.4-3.3-16.3 0L91.4 191.6c-4 2.7-6.5 7.4-6.5 12.2v104.3c0 4.8 2.5 9.6 6.5 12.2l156.4 104.3c4.9 3.3 11.4 3.3 16.3 0L420.6 320.4c4-2.6 6.6-7.4 6.6-12.2V203.9C427.1 203.2 427.1 202.6 427 201.9 427 201.7 427.1 202.6 427 201.9zM270.7 127.1l115.2 76.8 -51.5 34.4 -63.8-42.7V127.1zM241.3 127.1v68.6l-63.8 42.7 -51.5-34.4L241.3 127.1zM114.3 231.4l36.8 24.6 -36.8 24.6V231.4zM241.3 384.9L126.1 308.1l51.5-34.4 63.8 42.6V384.9zM256 290.8l-52-34.8 52-34.8 52 34.8L256 290.8zM270.7 384.9V316.3l63.8-42.6 51.5 34.4L270.7 384.9zM397.7 280.6l-36.8-24.6 36.8-24.6V280.6z">
+                  </path>
+                </svg>
+              </div>
+            </a></li>
+          <li><a class="email" href="#" title="Email">
+              <div class="ir">
+                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                  <path
+                    d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z">
+                  </path>
+                </svg>
+              </div>
+            </a></li>
+          <li><a class="facebook" href="#" title="Facebook">
+              <div class="ir">
+                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                  <path
+                    d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                  </path>
+                </svg>
+              </div>
+            </a></li>
+          <li><a class="github" href="#" title="GitHub">
+              <div class="ir">
+                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                  <path
+                    d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z">
+                  </path>
+                </svg>
+              </div>
+            </a></li>
+          <li><a class="googleplus" href="#" title="GooglePlus">
+              <div class="ir">
+                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                  <path
+                    d="M179.7 237.6L179.7 284.2 256.7 284.2C253.6 304.2 233.4 342.9 179.7 342.9 133.4 342.9 95.6 304.4 95.6 257 95.6 209.6 133.4 171.1 179.7 171.1 206.1 171.1 223.7 182.4 233.8 192.1L270.6 156.6C247 134.4 216.4 121 179.7 121 104.7 121 44 181.8 44 257 44 332.2 104.7 393 179.7 393 258 393 310 337.8 310 260.1 310 251.2 309 244.4 307.9 237.6L179.7 237.6 179.7 237.6ZM468 236.7L429.3 236.7 429.3 198 390.7 198 390.7 236.7 352 236.7 352 275.3 390.7 275.3 390.7 314 429.3 314 429.3 275.3 468 275.3">
+                  </path>
+                </svg>
+              </div>
+            </a></li>
+          <li><a class="instagram" href="#" title="Instagram">
+              <div class="ir">
+                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                  <path
+                    d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z">
+                  </path>
+                  <path
+                    d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z">
+                  </path>
+                  <circle cx="351.5" cy="160.5" r="21.5"></circle>
+                </svg>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
   </div>
+  <a href="#top" id="back-to-top" class="back-to-top" style="display: inline;"><i
+      class="fas fa-angle-double-up"></i>Top</a>
+  <script>
+    var link = document.getElementById("back-to-top");
+    var amountScrolled = 250;
 
-        <div class="col-lg-8 ">
+    function addClass(el, className) {
 
-<p class="social">
-  <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons" class="facebook">
-    <i class="socicon-facebook"></i><span class="sr-only">Share on Facebook</span>
-  </a>
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons" class="gplus">
-    <i class="socicon-googleplus"></i><span class="sr-only">Share on G+</span>
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=Share%20Icons%20Tutorial%20by%20Bootstrapious.com&amp;url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons&amp;via=bootstrapious"
-    class="twitter">
-    <i class="socicon-twitter"></i><span class="sr-only">Share on Twitter</span>
-  </a>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons&amp;summary=Check%20out%20this%20nice%20tutorial&amp;source=https%3A%2F%2Fbootstrapious.com%2F"
-    class="linkedin">
-    <i class="socicon-linkedin"></i><span class="sr-only">Share on LinkedIn</span>
-  </a>
-  <a href="https://buffer.com/add?url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons&amp;text=Share%20Icons%20Tutorial%20by%20Bootstrapious.com"
-    class="buffer">
-    <i class="socicon-buffer"></i><span class="sr-only">Save to Buffer</span>
-  </a>
-  <a href="https://getpocket.com/edit?url=https%3A%2F%2Fbootstrapious.com%2Fp%2Fshare-icons" class="pocket">
-    <i class="socicon-pocket"></i><span class="sr-only">Save to pocket</span>
-  </a>
-</p>
-</div>
-<div class="col-lg-2">
-</div>
+      if (el.classList) {
+        el.classList.add(className);
+      } else {
+        el.className += ' ' + className;
+      }
 
-</div>
-  </div>
+    }
 
+    function removeClass(el, className) {
+      if (el.classList)
+        el.classList.remove(className);
+      else
+        el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+    }
+
+    window.addEventListener('scroll', function (e) {
+      if (window.scrollY > amountScrolled) {
+        addClass(link, 'show');
+      } else {
+        removeClass(link, 'show');
+      }
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -346,8 +369,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
-      integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+    integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   <script src="/src/index.js"></script>
 </body>
 
