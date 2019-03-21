@@ -423,21 +423,19 @@ figure {
 /* social icons */
 
 .social {
-   position: absolute;
+  position: absolute;
   background: hsl(209, 45%, 10%);
-  font-size: 0.625em;
- min-height: 100%;
- min-width: 100%;
-margin: 0;
+  min-width: 100%;
+  margin: 0;
 }
 
-svg {
+/* svg {
   width: auto;
   height: 100%;
   max-width: 100%;
-}
+} */
 
-.ir {
+/* .ir {
   display: block;
   overflow: visible;
   padding: 0 0 100%;
@@ -453,34 +451,40 @@ svg {
   max-width: 100%;
   top: 0;
   left: 0;
-}
+} */
 
-.soc {
-  display: block;
-  font-size: 0;
+ul {
+/*   display: block;
+  font-size: 0; */
+  
   list-style: none;
-  margin: 0 0;
+  text-align: center;
+/*   margin: 0 0;
   padding: 48px;
   padding: 4.8rem;
   text-align: center;
   width: 100%;
-  max-width: 100%;
+  max-width: 100%; */
 }
 .soc li {
+  //position: relative;
   display: inline-block;
   margin: 12px;
   margin: 1.2rem;
 }
-.soc a, .soc svg {
-  display: block;
-}
 .soc a {
   position: relative;
-  height: 100%;
- height: 9.6rem;
-  width: 100%;
- width: 9.6rem;
- max-width: 100%;
+  display: block;
+  width: 5rem;
+  padding-bottom: 100%; 
+}
+
+svg {
+ position: absolute; 
+ height: 100%; 
+ width: 100%; 
+ left: 0; 
+ top: 0;
 }
 
 .icon-1:hover, .icon-2:hover, .icon-3:hover, .codepen:hover, .icon-5:hover, .icon-6:hover, .icon-7:hover, .email:hover, .icon-9:hover, .facebook:hover, .icon-11:hover, .icon-12:hover, .github:hover, .googleplus:hover, .instagram:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .icon-26:hover, .icon-27:hover, .icon-28:hover, .icon-29:hover, .icon-30:hover, .icon-31:hover, .icon-32:hover {
