@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 // add custom js below
-$(document).ready(function () {
-    $('.header').height($(window).height());
+/* $(document).ready(function () {
+    $('.navbar-nav').height($(window).height());
 
     $(".navbar a").click(function () {
         $("body,html").animate({
@@ -10,4 +10,4 @@ $(document).ready(function () {
 
     })
 
-})
+}) */

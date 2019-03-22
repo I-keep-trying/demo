@@ -21,9 +21,13 @@ $dark:          #400372;
 $link-color: $dark;
 $link-hover-color: darken($link-color, 15%);
 $body-bg: #000000;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
 
 html,h1,h2,h3,h4,h5,h6,a{
- font-family: "Raleway";
+ font-family: "Segoe UI";
 }
 
 .colors1:hover {
@@ -48,15 +52,14 @@ line-height: 2;
   -webkit-text-fill-color: transparent;
 }
 
-.navbar{ background:rgba(249, 0, 216, 0);}
+.navbar{ background:linear-gradient(to right, #f79009, #ce096c 100%);}
 .nav-link , .navbar-brand{ color: #000000; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: linear-gradient(to right, #f79009, #ce096c 100%);}
+.nav-link:hover{ background: linear-gradient(to right, #ce096c, #f79009 100%);}
 .navbar-collapse{ justify-content: flex-end;}
-.navbar-toggler{  background:rgba(255, 255, 255, 0) !important;}
+.navbar-toggler{
+  background:rgba(255, 255, 255, 0) !important;
 
-.navbar-collapse{
- justify-content: flex-end;
 }
 
 .fas.fa-bars {
@@ -64,51 +67,42 @@ line-height: 2;
 }
     /*header style*/
 body {
-    background-image: url('https://picsum.photos/1499/1006');
+  padding-top: 5rem;
+/*  background-image: "url('https://picsum.photos/1496/1006')";
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-}
-
-/* .overlay{
-  display: block;
- position: absolute;
- height: 100%;
- min-height: 100%;
- min-width: 100%;
-margin: 0;
- background: rgba(244, 244, 244, 0.178);
- background-size: cover;
-} */
-
-.header {
- position: relative;
-
+    background-position: center; */
 }
 
 .welcome {
-    position: absolute;
-    height: 250px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+   height: 250px;
     top: 40%;
     margin: auto;
-    padding: 2em;
 }
 
 .welcome h1{
  color:#F97300 ;
 }
-.welcome p{
- color:#666;
+.welcome-text {
+ color:rgb(192, 192, 192);
  font-size: 20px;
- width: 50%;
+ width: 100%;
  line-height: 1.5;
+ padding: 3rem 1.5rem;
+ text-align: center;
+ margin: auto;
+}
+
+.welcome h2 {
+   margin: 1em 0 12em;
 }
 
 .about{
- margin: 4em 0;
- padding: 1em;
- position: relative;
-height: 600px;
+    margin: 12em 0 4em;
+  position: relative;
+
 }
 
 // About section
@@ -122,12 +116,7 @@ height: 600px;
     width: 100%;
     border-radius: 50%
 }
-.about span{
- display: block;
- color: #888;
- position: absolute;
- left: 115px;
-}
+
 .about .desc{
  padding: 2em;
  border-left:4px solid #10828C;
@@ -140,26 +129,45 @@ height: 600px;
  color:#888;
 }
 
-figure {
-  position: relative;
+.images {
+//position: relative;
+	margin: 0 auto;
+  padding: 1em 0 4em;
   text-align: center;
-  cursor: pointer;
 }
 
+.images figure {
+  position: relative;
+ float: left;
+	overflow: hidden;
+	margin: 1% 1%;
+text-align: center;
+	width: 100%;
+}
+
+.images figure img {
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
 // Image effects
 
 .effect-lily {
+
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s ease-out;
 }
 
 .effect-lily:hover {
+ height: auto;
+    width: auto;
   border-radius: 50%;
-  opacity: 1;
+  opacity: 0;
 }
 
 /*Portfolio*/
@@ -418,86 +426,52 @@ figure {
  font-size: 16px;
 }
 
+/* footer */
+
 
 
 /* social icons */
 
-.social {
-  position: absolute;
-  background: hsl(209, 45%, 10%);
-  min-width: 100%;
-  margin: 0;
-}
-
-/* svg {
+footer {
+  background-color: #0e1a25;
   width: auto;
-  height: 100%;
-  max-width: 100%;
-} */
 
-/* .ir {
-  display: block;
-  overflow: visible;
-  padding: 0 0 100%;
+  bottom: 0;
+}
+
+/* a {
   position: relative;
-  height: 0;
-  width: 100%;
-}
-
-.ir > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  top: 0;
-  left: 0;
-} */
-
-ul {
-/*   display: block;
-  font-size: 0; */
-  
-  list-style: none;
-  text-align: center;
-/*   margin: 0 0;
-  padding: 48px;
-  padding: 4.8rem;
-  text-align: center;
-  width: 100%;
-  max-width: 100%; */
-}
-.soc li {
-  //position: relative;
-  display: inline-block;
-  margin: 12px;
-  margin: 1.2rem;
-}
-.soc a {
-  position: relative;
-  display: block;
   width: 5rem;
   padding-bottom: 100%; 
+} */
+
+.icon {
+  width: 100%;
+  height: auto; 
+  left: 0;
+  margin: 0;
+  padding: 0; 
+  //top: 50%;
 }
 
-svg {
- position: absolute; 
- height: 100%; 
- width: 100%; 
- left: 0; 
- top: 0;
-}
-
-.icon-1:hover, .icon-2:hover, .icon-3:hover, .codepen:hover, .icon-5:hover, .icon-6:hover, .icon-7:hover, .email:hover, .icon-9:hover, .facebook:hover, .icon-11:hover, .icon-12:hover, .github:hover, .googleplus:hover, .instagram:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .icon-26:hover, .icon-27:hover, .icon-28:hover, .icon-29:hover, .icon-30:hover, .icon-31:hover, .icon-32:hover {
+.codepen:hover, .email:hover, .behance:hover, .icon-9:hover, .facebook:hover, .icon-11:hover, .icon-12:hover, .github:hover, .googleplus:hover, .instagram:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .twitter:hover, .icon-27:hover, .youtube:hover, .yelp:hover, .icon-30:hover, .icon-31:hover, .icon-32:hover {
   border-radius: 100%;
   color: #0e1a25;
   fill: #0e1a25;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
+.behance {
+  color: #d99126;
+  fill: #d99126;
+}
+.behance:hover {
+  background: #d99126;
+}
 
 .codepen {
   color: #d9b526;
@@ -524,33 +498,48 @@ svg {
 }
 
 .github {
-  color: #26d991;
-  fill: #26d991;
+  color: #2626d9;
+  fill: #2626d9;
 }
 .github:hover {
-  background: #26d991;
-}
-
-.googleplus {
-  color: #26d9b5;
-  fill: #26d9b5;
-}
-.googleplus:hover {
-  background: #26d9b5;
+  background: #2626d9;
 }
 
 .instagram {
-  color: #26d9d9;
-  fill: #26d9d9;
+  color: #6e26d9;
+  fill: #6e26d9;
 }
 .instagram:hover {
-  background: #26d9d9;
+  background: #6e26d9;
 }
 
+.twitter {
+  color: #d926b5;
+  fill: #d926b5;
+}
+.twitter:hover {
+  background: #d926b5;
+}
+
+.youtube {
+  color: #d9266e;
+  fill: #d9266e;
+}
+.youtube:hover {
+  background: #d9266e;
+}
+
+.yelp {
+  color: #d9264a;
+  fill: #d9264a;
+}
+.yelp:hover {
+  background: #d9264a;
+}
 /* floating back to top button - some script in index.html */
 
 .back-to-top {
-  background-color: #000000;
+  background-color: #00000000;
   color: #FFFFFF;
   opacity: 0;
   transition: opacity .6s ease-in-out;
@@ -567,12 +556,12 @@ svg {
 a.back-to-top {
   font-weight: 1000;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 40px;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.6;
-  padding-left: 2px;
-  padding-top: 14px;
+/*   padding-left: 2px;
+  padding-top: 2px; */
 }
   
 .back-to-top.show {
@@ -636,6 +625,8 @@ a.back-to-top {
  @include button-active;
   @include button-size;
 }
+
+
 
 //dragon font-awesome in case I need it later
 .dragon{
