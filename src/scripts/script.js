@@ -1,10 +1,12 @@
 /* eslint-disable prettier/prettier */
 // add custom js below
-/* $(document).ready(function () {
+$(document).ready(function () {
 
-    $("a[href*=#]").click(function(event){
+    $("a[href*='#']").click(function (event) {
         event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
     });
 
-}) */
+
+    // document ready  
+});

@@ -8,6 +8,7 @@
 $enable-gradients: true;
 $enable-responsive-font-sizes: true;
 $enable-shadows: true;
+$enable-grid-classes:       false;
 
 $primary:       #fd146d;
 $secondary:     #facc00;
@@ -167,6 +168,11 @@ text-align: center;
 }
 
 /*Portfolio*/
+.portfolio{
+    display: flex;
+  margin: 4em 0;
+  justify-content: space-around;
+}
 
 .portfolio-e img {
   background: #000000;
@@ -174,7 +180,7 @@ text-align: center;
   width: 100%;
   margin: 1em 0;
   opacity: 0.8;
-  max-width: none;
+  //max-width: none;
 	width: -webkit-calc(100% );
 	width: calc(100%);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -189,9 +195,7 @@ text-align: center;
 	transform: translate3d(0,0,0);
 }
 
-.portfolio{
-  margin: 4em 0;
-}
+
 
 /*Blog*/
 
@@ -411,30 +415,59 @@ text-align: center;
  font-size: 16px;
 }
 
+/* back-to-top */
+.top-icon-container {
+  background-color:#e9baba00;
+position:fixed;
+z-index:1000;
+text-align:center;
+bottom:11vh;
+	right:0vw;
+    width:7vw;
+	height:10vh;
+}
+
+.top-icon {
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 8rem;
+ text-align:center;
+}
+
+/* .material-icons.orange600 { 
+  color: rgba(255, 255, 255, 0.541); 
+ font-size: 6rem;
+ text-align:center;
+} */
+
 /* footer */
-
-
 
 /* social icons */
 
-footer {
+.icons-group {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   background-color: #0e1a25;
-  width: 100%;
-  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: right;
+  padding: 0;
+  height: 11vh;
 }
-
 
 .icon {
-  //width: 100%;
-  position: static!important;
-  height: 100%; 
-/*   left: 0;
-  margin: 0;
-  padding: 0;  */
-  //top: 50%;
+  width: 10vw;
+  max-height: 10vh;
+  flex-shrink: 1;
 }
 
-.codepen:hover, .email:hover, .behance:hover, .icon-9:hover, .facebook:hover, .icon-11:hover, .icon-12:hover, .github:hover, .googleplus:hover, .instagram:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .twitter:hover, .icon-27:hover, .youtube:hover, .yelp:hover, .icon-30:hover, .icon-31:hover, .icon-32:hover {
+.behance {
+  color: #d99126;
+  fill: #d99126;
+}
+.behance:hover, .behance:active {
+  background: #d99126;
   border-radius: 100%;
   color: #0e1a25;
   fill: #0e1a25;
@@ -445,79 +478,143 @@ footer {
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
-.behance {
-  color: #d99126;
-  fill: #d99126;
-}
-.behance:hover, .behance:active {
-  background: #d99126;
-}
-
 .codepen {
   color: #d9b526;
   fill: #d9b526;
 }
-.codepen:hover {
+.codepen:hover, .codepen:active  {
   background: #d9b526;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .email {
   color: #6ed926;
   fill: #6ed926;
 }
-.email:hover {
+.email:hover, .email:active {
   background: #6ed926;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .facebook {
   color: #26d926;
   fill: #26d926;
 }
-.facebook:hover {
+.facebook:hover, .facebook:active  {
   background: #26d926;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .github {
   color: #2626d9;
   fill: #2626d9;
 }
-.github:hover {
+.github:hover, .github:active  {
   background: #2626d9;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .instagram {
   color: #6e26d9;
   fill: #6e26d9;
 }
-.instagram:hover {
+.instagram:hover, .instagram:active  {
   background: #6e26d9;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .twitter {
   color: #d926b5;
   fill: #d926b5;
 }
-.twitter:hover {
+.twitter:hover, .twitter:active  {
   background: #d926b5;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .youtube {
   color: #d9266e;
   fill: #d9266e;
 }
-.youtube:hover {
+.youtube:hover, .youtube:active  {
   background: #d9266e;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .yelp {
   color: #d9264a;
   fill: #d9264a;
 }
-.yelp:hover {
+.yelp:hover, .yelp:active  {
   background: #d9264a;
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
-/* floating back to top button - some script in index.html */
+/* floating back to top button */
 
+/* 
+
+,---.          |         |                       |                    |    
+|---.,---.,---.|--- ,---.|--- ,---.,---.,---.    |,-.-.,---.,---.,---.|--- 
+|   ||   ||   ||    `---.|    |    ,---||   |    || | ||   ||   ||    |    
+`---'`---'`---'`---'`---'`---'`    `---^|---'    `` ' '|---'`---'`    `---'
+
+*/
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -526,7 +623,6 @@ footer {
   50% { background-position: 100% 50% }
   100% { background-position: 0% 50% }
 }
-
 
 @mixin button-reset {
   padding: 10;
@@ -595,4 +691,9 @@ footer {
 }
 .dragon:hover{color: rgb(0, 0, 0); background-image: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(237,104,3,1) 100%);}
 
+// Grid system
 
+.grid-container {
+  @include make-container();
+  @include make-container-max-widths;
+}
