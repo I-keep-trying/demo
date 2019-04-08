@@ -1,11 +1,10 @@
-require('offline-plugin/runtime').install();
+import '../index.html'
+import './index.scss'
+import './scripts/script'
+import './scripts/script2'
+import './scripts/fab'
 
+// eslint-disable-next-line import/no-extraneous-dependencies
+require('offline-plugin/runtime').install()
 
-import '../index.html';
-import './index.scss';
-import './scripts/script.js';
-import './scripts/script2.js';
-import './scripts/fab.js';
-
-
-//import '../dist/webpack-bundle.js'; 
+// import '../dist/webpack-bundle';

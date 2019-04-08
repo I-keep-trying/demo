@@ -1,4 +1,4 @@
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}
+/* article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}
 audio,canvas,video{display:inline-block;}
 audio:not([controls]){display:none;height:0;}[hidden]{display:none;}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
@@ -21,7 +21,7 @@ svg:not(:root){overflow:hidden;}
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}
 button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}
 button,input{line-height:normal;}
-button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}
 button[disabled],input[disabled]{cursor:default;}
 input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}
 input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
@@ -38,4 +38,4 @@ legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
+} */
