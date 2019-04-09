@@ -6,7 +6,7 @@
 /dist/index*
 /dist/sw.js
 /dist/webpack-bundle.css.*
-/dist/webpack-bundle.js*
+/dist/webpack-bundle.js.*
 /.vscode
 /haters
 .DS_Store

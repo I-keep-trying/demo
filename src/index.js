@@ -1,10 +1,10 @@
 import '../index.html'
-import './index.scss'
+/* import './index.scss'
 import './scripts/script'
 import './scripts/script2'
-import './scripts/fab'
+import './scripts/fab' */
 
 // eslint-disable-next-line import/no-extraneous-dependencies
-require('offline-plugin/runtime').install()
+//require('offline-plugin/runtime').install()
 
-// import '../dist/webpack-bundle';
+import '../dist/webpack-bundle'
