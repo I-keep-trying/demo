@@ -211,7 +211,7 @@
       <div class="container-fluid">
         <!-- <h1 class="text-center title">About Me</h1> -->
         <div class="row">
-            <canvas width="420px" height="150px" id="aboutCanvas"></canvas>
+            <canvas height="150px" id="aboutCanvas"></canvas>
           </div>
           <div class="row">
           <div class="col-md-3 images">
@@ -547,19 +547,38 @@
 
     <!-- <script src="/src/index.js"></script> -->
     <script>
-      let c = document.getElementById('aboutCanvas')
-      if (c.getContext) {
-        let ctx = c.getContext('2d')
+      const canvas = document.querySelector('canvas')
+      canvas.width = window.innerWidth
+      let ctx = canvas.getContext('2d')
+      const x = canvas.width / 2;
+      let text = 'About Me'
 
-        let gradient = ctx.createLinearGradient(0, 0, c.width, 0)
+      const debounce = (func) => {
+  let timer
+  return (event) => {
+    if (timer) { clearTimeout(timer) }
+    timer = setTimeout(func, 100, event)
+  }
+}
+
+      let gradient = ctx.createLinearGradient(0, 0, canvas.width, 0)
         gradient.addColorStop('0', '#f79009')
+        gradient.addColorStop('.1', '#ce096c')
+        gradient.addColorStop('.2', '#f79009')
+        gradient.addColorStop('.3', '#ce096c')
+        gradient.addColorStop('.4', '#f79009')
         gradient.addColorStop('.5', '#ce096c')
-        gradient.addColorStop('1.0', '#ce096c')
+        gradient.addColorStop('.6', '#f79009')
+        gradient.addColorStop('.7', '#ce096c')
+        gradient.addColorStop('.8', '#f79009')
+        gradient.addColorStop('.9', '#ce096c')
 
         ctx.font = '700 3rem Arial, sans-serif'
         ctx.fillStyle = gradient
-        ctx.fillText('About Me', 90, 90)
-      }
+
+        ctx.fillText(text, x, 90)
+
+
     </script>
   </body>
 </html>
